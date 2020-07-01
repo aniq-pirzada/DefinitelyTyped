@@ -686,6 +686,7 @@ namespace Parse {
         withinMiles<K extends (keyof T['attributes'] | keyof BaseAttributes)>(key: K, point: GeoPoint, maxDistance: number): this;
         withinPolygon<K extends (keyof T['attributes'] | keyof BaseAttributes)>(key: K, points: number[][]): this;
         withinRadians<K extends (keyof T['attributes'] | keyof BaseAttributes)>(key: K, point: GeoPoint, maxDistance: number): this;
+        withCount() : this;
     }
 
     namespace Query {
